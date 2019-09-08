@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const SeatSchema = mongoose.Schema({
     available:Number,
     filled: Number,
-    total: Number
+    total: Number,
+    timeslot:String
 }, {
     timestamps: true
 });
