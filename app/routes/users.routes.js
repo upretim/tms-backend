@@ -15,6 +15,9 @@ module.exports = (app) => {
 
     //Retrieve ticket information
     app.get('/ticket-data', TicketData.getTicketData);
+
+    //Saving ticket information
+    app.post('/ticket-data', TicketData.addTicket);
    
 
     // Update a Note with noteId
